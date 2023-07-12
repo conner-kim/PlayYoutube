@@ -11,17 +11,18 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             NavigationLink {
                 VideoView()
             } label: {
                 Image("home")
                     .renderingMode(.original)
                     .resizable()
-                    .scaledToFit()
+                    .scaledToFill()
                     .ignoresSafeArea()
             }
         }
+        .navigationViewStyle(.stack)
         .navigationBarBackButtonHidden()
         .statusBarHidden()
     }
