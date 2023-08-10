@@ -11,7 +11,7 @@ import YouTubePlayerKit
 struct VideoView: View {
     
     let player = YouTubePlayer(
-        source: .url("https://www.youtube.com/watch?v=47AhstKWkZs"),
+        source: .url("https://youtu.be/57gSMzKbUYM"),
         configuration: YouTubePlayer.Configuration(
             // Define which fullscreen mode should be used (system or web)
             fullscreenMode: .system,
